@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Medicine App</string>
+    <string name="placeholder_username">Enter username or email</string>
+    <string name="placeholder_password">enter password</string>
+    <string name="username_label">Username or Password</string>
+    <string name="password_label">Password</string>
+    <string name="login_label">Login</string>
+    <string name="medicine_list_screen_title">Medicine List</string>
+    <string name="medicine_label">Medicine Name</string>
+    <string name="dose">Dose</string>
+    <string name="strength">Strength</string>
+</resources>

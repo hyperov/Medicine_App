@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MedicineApp" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/purple_700</item>
+        <item name="postSplashScreenTheme">@style/Theme.MedicineApp</item>
+        <item name="android:windowBackground">@color/teal_200</item>
+
+    </style>
+</resources>
