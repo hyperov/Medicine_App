@@ -19,7 +19,7 @@ fun MedicineCard(
     dose: String,
     strength: String,
     onNavigateToDetails: () -> Unit,
-    MedicationItemViewModel: MedicationItemViewModel
+    medicationItemViewModel: MedicationItemViewModel
 ) {
     Card(
         shape = RoundedCornerShape(8.dp),
@@ -29,9 +29,10 @@ fun MedicineCard(
             .padding(horizontal = 16.dp, vertical = 8.dp)
             .fillMaxWidth()
             .clickable {
-                onNavigateToDetails()
-                MedicationItemViewModel.clickedItem =
+
+                medicationItemViewModel.clickedItem =
                     MedicationUiModel(medicineName, dose, strength)
+                onNavigateToDetails()
             },
     ) {
         Column(modifier = Modifier.padding(24.dp)) {

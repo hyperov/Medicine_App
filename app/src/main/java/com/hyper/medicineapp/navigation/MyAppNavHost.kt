@@ -41,7 +41,7 @@ fun MyAppNavHost(
                 onNavigateToDetails = { navController.navigate("details") },
                 onNavigateBackToLogin = { navController.popBackStack() },
                 loginViewModel = loginViewModel,
-                MedicationItemViewModel = medicationItemViewModel
+                medicationItemViewModel = medicationItemViewModel
             )
         }
 

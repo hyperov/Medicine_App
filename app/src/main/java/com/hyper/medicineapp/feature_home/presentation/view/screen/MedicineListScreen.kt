@@ -26,7 +26,7 @@ fun MedicineListScreen(
     loginViewModel: LoginViewModel = hiltViewModel(),
     onNavigateToDetails: () -> Unit,
     onNavigateBackToLogin: () -> Unit,
-    MedicationItemViewModel: MedicationItemViewModel
+    medicationItemViewModel: MedicationItemViewModel
 ) {
 
     val state = medicationListViewModel.uiState.collectAsState()
@@ -58,7 +58,7 @@ fun MedicineListScreen(
                 error = state.value.error,
                 paddingValues = paddingValues,
                 onNavigateToDetails = onNavigateToDetails,
-                MedicationItemViewModel = MedicationItemViewModel
+                medicationItemViewModel = medicationItemViewModel
             )
         }
     }

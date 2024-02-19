@@ -5,5 +5,5 @@ import com.google.gson.annotations.SerializedName
 
 data class Medication(
     @SerializedName("medicationsClasses")
-    val medicationsClasses: List<MedicationsClasse>
+    val medicationsClasses: List<MedicationsClasses>
 )

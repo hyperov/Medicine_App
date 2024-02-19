@@ -21,7 +21,7 @@ fun MedicationListContent(
     error: String,
     paddingValues: PaddingValues,
     onNavigateToDetails: () -> Unit,
-    MedicationItemViewModel: MedicationItemViewModel
+    medicationItemViewModel: MedicationItemViewModel
 ) {
     if (isLoading) {
         Column(
@@ -48,7 +48,7 @@ fun MedicationListContent(
                         dose = medicationList[it].dose,
                         strength = medicationList[it].strength,
                         onNavigateToDetails = onNavigateToDetails,
-                        MedicationItemViewModel = MedicationItemViewModel
+                        medicationItemViewModel = medicationItemViewModel
                     )
                 }
             },
