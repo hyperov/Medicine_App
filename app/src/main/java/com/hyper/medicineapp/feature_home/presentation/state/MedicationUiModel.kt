@@ -4,7 +4,4 @@ data class MedicationUiModel(
     val drugName: String,
     val dose: String,
     val strength: String
-) {
-
-
-}
+)
